@@ -224,6 +224,18 @@ curl http://localhost:8000/v1/chat/completions \
 }
 ```
 
+HOST JetPack/L4T (driver stack) 🔥
+-> Jetson host OS provides NVIDIA driver + kernel integration.
+
+Container base that matches L4T 🔥
+-> Use an L4T-base container that matches your JetPack version.
+-> If the base is wrong, you’ll get CUDA library mismatch / missing libs.
+
+Python wheels that match CUDA/Python ABI 🔥
+-> This is where Jetson AI Lab PyPI helps most.
+
+
+
 **Spark**
 
 For Spark I used the python script to query -> 
