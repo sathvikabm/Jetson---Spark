@@ -226,9 +226,8 @@ curl http://localhost:8000/v1/chat/completions \
 
 **Spark**
 
-
 For Spark I used the python script to query -> 
-
+```
 ┌─────────────────────────────────────────────────────┐
 │         OPTION 1: vLLM Server (What you started)    │
 ├─────────────────────────────────────────────────────┤
@@ -259,10 +258,11 @@ For Spark I used the python script to query ->
 │  - Receives & parses responses                      │
 │                                                     │
 └─────────────────────────────────────────────────────┘
-
+```
 
 
 **Steps and flow**
+```
 1. You start vLLM container:
    ┌────────────────────────┐
    │ vLLM loads model to    │
@@ -288,4 +288,4 @@ For Spark I used the python script to query ->
    │ Extracts text          │
    │ Sends to Jetson        │
    └────────────────────────┘
-
+```
